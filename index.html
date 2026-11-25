@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة خطوبة حنين ويوسف | 4 ديسمبر 2026</title>
+    <meta property="og:title" content="دعوة خطوبة حنين ويوسف 💍 | 4 ديسمبر 2026">
+    <meta property="og:description" content="بكل الحب والفرح ندعوكم لحفل خطوبة بنتي وأميرتي حنين ويوسف — قاعة وادي النخيل بطنطا">
+    <meta property="og:image" content="card.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,700&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --ivory: #fcf9f2;
+            --pearl: #fffdf8;
+            --gold-1: #9e7329;
+            --gold-2: #c99e48;
+            --gold-3: #e8cf96;
+            --gold-shimmer: linear-gradient(135deg, #9a6e25 0%, #d4aa54 35%, #f5e1a4 50%, #c6983e 70%, #8e631d 100%);
+            --sage: #5c6b4b;
+            --sage-dark: #3f4b32;
+            --blush: #b85d63;
+            --ink: #34291c;
+            --ink-soft: #685742;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--ivory);
+            color: var(--ink);
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.85;
+            background-image:
+                radial-gradient(circle at 15% 15%, rgba(201, 158, 72, 0.14) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(92, 107, 75, 0.12) 0%, transparent 45%),
+                radial-gradient(rgba(158, 115, 41, 0.12) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 26px 26px;
+        }
+
+        /* ================= البوابة الملكية بختم الشمع الذهبي ================= */
+        #gate-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: visibility 1.4s ease-in-out;
+        }
+
+        #gate-overlay.opened {
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .gate-door {
+            position: absolute;
+            top: 0;
+            width: 50.5%;
+            height: 100%;
+            background: radial-gradient(circle at center, #fbf5e8 0%, #e7d4b0 100%);
+            transition: transform 1.45s cubic-bezier(0.77, 0, 0.175, 1);
+            box-shadow: inset 0 0 95px rgba(142, 99, 29, 0.28);
+        }
+
+        .gate-door::before {
+            content: "";
+            position: absolute;
+            inset: 16px;
+            border: 1.5px solid rgba(158, 115, 41, 0.45);
+            pointer-events: none;
+        }
+
+        .gate-door::after {
+            content: "";
+            position: absolute;
+            inset: 22px;
+            border: 1px dashed rgba(158, 115, 41, 0.35);
+            pointer-events: none;
+        }
+
+        .gate-door.right { right: 0; border-left: 3px solid var(--gold-2); }
+        .gate-door.left { left: 0; border-right: 3px solid var(--gold-2); }
+
+        #gate-overlay.opened .gate-door.right { transform: translateX(100%); }
+        #gate-overlay.opened .gate-door.left { transform: translateX(-100%); }
+
+        .gate-card {
+            position: relative;
+            z-index: 10;
+            background: rgba(255, 253, 248, 0.97);
+            backdrop-filter: blur(12px);
+            padding: 40px 26px 34px;
+            border-radius: 32px;
+            text-align: center;
+            max-width: 92%;
+            width: 420px;
+            border: 2px solid var(--gold-2);
+            box-shadow: 0 30px 70px rgba(94, 65, 20, 0.28), 0 0 0 7px rgba(232, 207, 150, 0.55);
+            transition: opacity 0.65s ease, transform 0.65s ease;
+        }
+
+        #gate-overlay.opened .gate-card {
+            opacity: 0;
+            transform: scale(0.86);
+        }
+
+        .wax-seal {
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 14px;
+            border-radius: 50%;
+            background: var(--gold-shimmer);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fffdf8;
+            font-family: 'Aref Ruqaa', serif;
+            font-size: 1.65rem;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(142, 99, 29, 0.4), inset 0 0 0 4px rgba(255, 255, 255, 0.35);
+            animation: sealFloat 2.8s ease-in-out infinite;
+        }
+
+        @keyframes sealFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-6px) rotate(3deg); }
+        }
+
+        .gate-sub {
+            font-size: 0.96rem;
+            font-weight: 700;
+            color: var(--sage);
+            margin-bottom: 4px;
+        }
+
+        .gate-names {
+            font-family: 'Aref Ruqaa', serif;
+            font-size: 2.85rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.3;
+            margin-bottom: 10px;
+            filter: drop-shadow(0 2px 4px rgba(142, 99, 29, 0.15));
+        }
+
+        .gate-date-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f6ebd4;
+            color: var(--gold-1);
+            border: 1px solid rgba(158, 115, 41, 0.35);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.88rem;
+            font-weight: 800;
+            margin-bottom: 24px;
+        }
+
+        .btn-open-invite {
+            background: var(--gold-shimmer);
+            background-size: 200% auto;
+            color: #fff;
+            border: none;
+            padding: 16px 34px;
+            font-size: 1.06rem;
+            font-weight: 900;
+            font-family: 'Cairo', sans-serif;
+            border-radius: 50px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-shadow: 0 1px 3px rgba(80, 52, 10, 0.45);
+            box-shadow: 0 14px 30px rgba(142, 99, 29, 0.38);
+            animation: shimmerBtn 3s linear infinite, pulseRing 2s infinite;
+        }
+
+        @keyframes shimmerBtn {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        @keyframes pulseRing {
+            0% { box-shadow: 0 0 0 0 rgba(201, 158, 72, 0.65); }
+            70% { box-shadow: 0 0 0 18px rgba(201, 158, 72, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(201, 158, 72, 0); }
+        }
+
+        /* ================= زر الموسيقى العائم ================= */
+        .music-fab {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 9000;
+            background: var(--gold-1);
+            color: #fff;
+            border: 2px solid var(--gold-3);
+            padding: 0 18px;
+            height: 48px;
+            border-radius: 50px;
+            display: none;
+            align-items: center;
+            gap: 9px;
+            font-size: 0.86rem;
+            font-weight: 800;
+            font-family: 'Cairo', sans-serif;
+            cursor: pointer;
+            box-shadow: 0 10px 26px rgba(52, 41, 28, 0.28);
+            transition: transform 0.25s ease;
+        }
+
+        .music-fab:hover { transform: scale(1.05); }
+        .music-fab.playing i { animation: discSpin 3.5s linear infinite; }
+
+        @keyframes discSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* ================= البتلات والقلوب الذهبية المتطايرة ================= */
+        #petals-layer {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 60;
+            overflow: hidden;
+        }
+
+        .petal {
+            position: absolute;
+            bottom: -30px;
+            opacity: 0.75;
+            animation: floatPetal linear forwards;
+        }
+
+        @keyframes floatPetal {
+            0% { transform: translateY(0) translateX(0) rotate(0deg) scale(0.85); opacity: 0.85; }
+            50% { transform: translateY(-50vh) translateX(18px) rotate(180deg) scale(1.05); }
+            100% { transform: translateY(-108vh) translateX(-15px) rotate(360deg) scale(1.25); opacity: 0; }
+        }
+
+        /* ================= الإطار الرئيسي للدعوة ================= */
+        .page-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 26px 14px 85px;
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.95s ease 0.45s, transform 0.95s ease 0.45s;
+        }
+
+        .page-container.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .luxury-card {
+            background: var(--pearl);
+            border-radius: 32px;
+            padding: 42px 24px 36px;
+            text-align: center;
+            border: 2px solid rgba(201, 158, 72, 0.55);
+            box-shadow: 0 24px 60px rgba(94, 65, 20, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .luxury-card::before {
+            content: "";
+            position: absolute;
+            inset: 12px;
+            border: 1px solid rgba(201, 158, 72, 0.45);
+            border-radius: 22px;
+            pointer-events: none;
+        }
+
+        .corner-ornament {
+            position: absolute;
+            width: 58px;
+            height: 58px;
+            border: 2.5px solid var(--gold-2);
+            pointer-events: none;
+            opacity: 0.55;
+        }
+
+        .corner-tl { top: 20px; left: 20px; border-right: none; border-bottom: none; border-top-left-radius: 16px; }
+        .corner-tr { top: 20px; right: 20px; border-left: none; border-bottom: none; border-top-right-radius: 16px; }
+        .corner-bl { bottom: 20px; left: 20px; border-right: none; border-top: none; border-bottom-left-radius: 16px; }
+        .corner-br { bottom: 20px; right: 20px; border-left: none; border-top: none; border-bottom-right-radius: 16px; }
+
+        .top-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, rgba(201,158,72,0.12), rgba(201,158,72,0.25), rgba(201,158,72,0.12));
+            color: var(--gold-1);
+            padding: 5px 20px;
+            border-radius: 50px;
+            font-size: 0.88rem;
+            font-weight: 800;
+            margin-bottom: 14px;
+            border: 1px solid rgba(201, 158, 72, 0.35);
+        }
+
+        .bismillah {
+            font-family: 'Amiri', serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: var(--gold-1);
+            margin-bottom: 12px;
+        }
+
+        .quran-box {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            color: var(--ink);
+            background: linear-gradient(180deg, #fbf5e8 0%, #f5ead4 100%);
+            padding: 18px 20px;
+            border-radius: 20px;
+            border-right: 4px solid var(--gold-2);
+            border-left: 4px solid var(--gold-2);
+            margin-bottom: 22px;
+            line-height: 2.05;
+            box-shadow: inset 0 0 20px rgba(201, 158, 72, 0.08);
+        }
+
+        .romantic-verse {
+            font-family: 'Amiri', serif;
+            font-size: 1.36rem;
+            font-weight: 700;
+            color: var(--blush);
+            margin-bottom: 18px;
+        }
+
+        .ornament-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin: 20px 0;
+            color: var(--gold-2);
+            font-size: 1.1rem;
+        }
+
+        .ornament-divider::before,
+        .ornament-divider::after {
+            content: "";
+            height: 1.5px;
+            width: 95px;
+            background: linear-gradient(90deg, transparent, var(--gold-2), transparent);
+        }
+
+        .bride-groom-title {
+            margin: 12px 0 20px;
+        }
+
+        .bride-groom-title span {
+            display: block;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--sage);
+            margin-bottom: 4px;
+        }
+
+        .bride-groom-title h1 {
+            font-family: 'Aref Ruqaa', serif;
+            font-size: 3.4rem;
+            background: var(--gold-shimmer);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.35;
+            filter: drop-shadow(0 3px 8px rgba(158, 115, 41, 0.2));
+        }
+
+        .invitation-letter {
+            font-size: 1.04rem;
+            color: var(--ink);
+            font-weight: 600;
+            margin-bottom: 26px;
+            padding: 0 10px;
+        }
+
+        .invitation-letter strong {
+            color: var(--gold-1);
+            font-weight: 900;
+            font-size: 1.08rem;
+        }
+
+        /* ================= بطاقة الزمان والمكان ================= */
+        .event-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 26px;
+        }
+
+        .detail-tile {
+            background: linear-gradient(180deg, #fcf7ec 0%, #f4e7cd 100%);
+            border: 1.5px solid rgba(201, 158, 72, 0.45);
+            border-radius: 20px;
+            padding: 16px 12px;
+            box-shadow: 0 8px 20px rgba(142, 99, 29, 0.06);
+        }
+
+        .detail-tile i {
+            font-size: 1.45rem;
+            color: var(--gold-1);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .detail-tile strong {
+            display: block;
+            font-size: 0.84rem;
+            color: var(--sage);
+            margin-bottom: 2px;
+        }
+
+        .detail-tile span {
+            font-size: 1.02rem;
+            font-weight: 900;
+            color: var(--ink);
+        }
+
+        /* ================= العداد التنازلي الفاخر ================= */
+        .countdown-wrapper {
+            background: rgba(246, 235, 212, 0.45);
+            border-radius: 24px;
+            padding: 18px 14px;
+            margin-bottom: 26px;
+            border: 1px dashed rgba(158, 115, 41, 0.45);
+        }
+
+        .countdown-label {
+            font-size: 0.94rem;
+            font-weight: 800;
+            color: var(--sage-dark);
+            margin-bottom: 12px;
+        }
+
+        .countdown-boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .cd-item {
+            background: #fff;
+            border-radius: 16px;
+            padding: 12px 4px;
+            border: 1.5px solid var(--gold-3);
+            box-shadow: 0 6px 16px rgba(142, 99, 29, 0.08);
+        }
+
+        .cd-item span {
+            display: block;
+            font-size: 1.55rem;
+            font-weight: 900;
+            color: var(--gold-1);
+            line-height: 1.15;
+        }
+
+        .cd-item small {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--ink-soft);
+        }
+
+        /* ================= إطار الفيديو التذكاري الملكي ================= */
+        .video-showcase-box {
+            margin: 26px auto;
+            max-width: 480px;
+            background: linear-gradient(180deg, #fcf7ec 0%, #f4e7cd 100%);
+            border-radius: 26px;
+            padding: 14px;
+            border: 2px solid var(--gold-2);
+            box-shadow: 0 18px 40px rgba(94, 65, 20, 0.16);
+        }
+
+        .video-header-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.92rem;
+            font-weight: 800;
+            color: var(--gold-1);
+            margin-bottom: 10px;
+        }
+
+        .video-frame-inner {
+            border-radius: 18px;
+            overflow: hidden;
+            background: #1f1810;
+            border: 1.5px solid var(--gold-3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+        }
+
+        .video-frame-inner video {
+            width: 100%;
+            height: auto;
+            max-height: 460px;
+            display: block;
+            background: #1f1810;
+        }
+
+        /* ================= إطار الكارت التذكاري ================= */
+        .souvenir-frame {
+            margin: 24px auto;
+            max-width: 370px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 24px;
+            border: 2px solid var(--gold-3);
+            box-shadow: 0 16px 36px rgba(52, 41, 28, 0.14);
+        }
+
+        .souvenir-frame img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            display: block;
+        }
+
+        /* ================= أزرار الموقع والتهنئة ================= */
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0 18px;
+        }
+
+        .btn-gold-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .btn-location {
+            background: linear-gradient(135deg, var(--sage) 0%, var(--sage-dark) 100%);
+            color: #fff;
+            box-shadow: 0 12px 24px rgba(63, 75, 50, 0.28);
+        }
+
+        .btn-calendar {
+            background: var(--gold-shimmer);
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(80, 52, 10, 0.4);
+            box-shadow: 0 12px 24px rgba(142, 99, 29, 0.3);
+        }
+
+        .btn-gold-action:hover {
+            transform: translateY(-2px);
+        }
+
+        .closing-dua {
+            font-family: 'Amiri', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--gold-1);
+            margin-top: 14px;
+            line-height: 1.9;
+        }
+
+        @media (max-width: 480px) {
+            .bride-groom-title h1 { font-size: 2.7rem; }
+            .gate-names { font-size: 2.35rem; }
+            .luxury-card { padding: 34px 16px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ملف أغنية يا دبلة الخطوبة -->
+    <audio id="engagement-song" src="song.mp3" loop preload="auto"></audio>
+
+    <!-- طبقة البتلات والقلوب الذهبية -->
+    <div id="petals-layer"></div>
+
+    <!-- زر التحكم بالموسيقى -->
+    <button class="music-fab" id="music-toggle" onclick="toggleSong()">
+        <i class="fa-solid fa-compact-disc" id="music-icon"></i>
+        <span id="music-label">يا دبلة الخطوبة</span>
+    </button>
+
+    <!-- ================= البوابة الملكية ================= -->
+    <div id="gate-overlay">
+        <div class="gate-door right"></div>
+        <div class="gate-door left"></div>
+
+        <div class="gate-card">
+            <div class="wax-seal">ح &amp; ي</div>
+            <div class="gate-sub">بكل الحب والفرح .. ندعوكم لحفل خطوبة</div>
+            <div class="gate-names">حنين &amp; يوسف</div>
+            <div class="gate-date-pill">
+                <i class="fa-regular fa-calendar"></i>
+                <span>الجمعة 4 / 12 / 2026 — طنطا</span>
+            </div>
+            <br>
+            <button class="btn-open-invite" onclick="openInvitation()">
+                <span>افتح الدعوة واستمع للأغنية</span>
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= محتوى الدعوة ================= -->
+    <div class="page-container" id="invite-content">
+        <div class="luxury-card">
+            <div class="corner-ornament corner-tl"></div>
+            <div class="corner-ornament corner-tr"></div>
+            <div class="corner-ornament corner-bl"></div>
+            <div class="corner-ornament corner-br"></div>
+
+            <div class="top-badge">💍 دعوة لحفل خطوبة 💍</div>
+            <div class="bismillah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</div>
+
+            <div class="quran-box">
+                ﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ﴾
+            </div>
+
+            <div class="romantic-verse">
+                « إنَّ الروح إذا التقت بمن يشبهها ❤️ ترمّمت، وتعافت، واكتملت »
+            </div>
+
+            <div class="ornament-divider"><i class="fa-solid fa-heart"></i></div>
+
+            <div class="bride-groom-title">
+                <span>بنتي وأميرتي الغالية</span>
+                <h1>حنين &amp; يوسف</h1>
+            </div>
+
+            <p class="invitation-letter">
+                بكل ما يحمله القلب من فرحٍ وسرور، وبمناسبة الخطوبة،<br>
+                الحمد لله الذي بنعمته تتم الصالحات، والحمد لله الذي ألّف بين القلوب وجمع الأحباب.<br>
+                بكل عبارات المودة، وبأحر التهاني والتبريكات،<br>
+                <strong>أدعو كل الأهل والأقارب والجيران لحفل خطوبة ابنتي حنين</strong><br>
+                يسعدنا حضوركم لتكتمل فرحتنا وعقبال أولادكم.
+            </p>
+
+            <!-- بطاقات التاريخ والوقت والمكان -->
+            <div class="event-details-grid">
+                <div class="detail-tile">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <strong>اليوم والتاريخ</strong>
+                    <span>الجمعة 4 / 12 / 2026</span>
+                </div>
+                <div class="detail-tile">
+                    <i class="fa-regular fa-clock"></i>
+                    <strong>موعد الحفل</strong>
+                    <span>الساعة 8:00 مساءً</span>
+                </div>
+                <div class="detail-tile">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <strong>مكان الحفل</strong>
+                    <span>قاعة وادي النخيل — طنطا</span>
+                </div>
+            </div>
+
+            <!-- العداد التنازلي -->
+            <div class="countdown-wrapper">
+                <div class="countdown-label">⏳ العد التنازلي لليلة الفرح ⏳</div>
+                <div class="countdown-boxes">
+                    <div class="cd-item"><span id="days">00</span><small>يوم</small></div>
+                    <div class="cd-item"><span id="hours">00</span><small>ساعة</small></div>
+                    <div class="cd-item"><span id="minutes">00</span><small>دقيقة</small></div>
+                    <div class="cd-item"><span id="seconds">00</span><small>ثانية</small></div>
+                </div>
+            </div>
+
+            <!-- قسم الفيديو التذكاري -->
+            <div class="video-showcase-box">
+                <div class="video-header-tag">
+                    <i class="fa-solid fa-film"></i>
+                    <span>فيديو تذكاري لحفل خطوبة حنين ويوسف</span>
+                </div>
+                <div class="video-frame-inner">
+                    <video controls playsinline preload="metadata" poster="card.jpg" onplay="handleVideoStart()">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- كارت الدعوة المصمم -->
+            <div class="souvenir-frame">
+                <img src="card.jpg" alt="كارت دعوة خطوبة حنين ويوسف" onerror="this.parentElement.style.display='none'">
+            </div>
+
+            <!-- أزرار الخريطة وحفظ الموعد -->
+            <div class="cta-buttons">
+                <a href="https://www.google.com/maps/search/?api=1&query=قاعة+وادي+النخيل+طنطا" target="_blank" class="btn-gold-action btn-location">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>موقع قاعة وادي النخيل بطنطا على الخريطة</span>
+                </a>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D8%AE%D8%B7%D9%88%D8%A8%D8%A9+%D8%AD%D9%86%D9%8A%D9%86+%D9%88%D9%8A%D9%88%D8%B3%D9%81&dates=20261204T180000Z/20261204T220000Z&details=%D8%AF%D8%B9%D9%88%D8%A9+%D9%84%D8%AD%D9%81%D9%84+%D8%AE%D8%B7%D9%88%D8%A8%D8%A9+%D8%AD%D9%86%D9%8A%D9%86+%D9%88%D9%8A%D9%88%D8%B3%D9%81+%D8%A8%D9%82%D8%A7%D8%B9%D8%A9+%D9%88%D8%A7%D8%AF%D9%8A+%D8%A7%D9%84%D9%86%D8%AE%D9%8A%D9%84+%D8%A8%D8%B7%D9%86%D8%B7%D8%A7&location=%D9%82%D8%A7%D8%B9%D8%A9+%D9%88%D8%A7%D8%AF%D9%8A+%D8%A7%D9%84%D9%86%D8%AE%D9%8A%D9%84+%D8%B7%D9%86%D8%B7%D8%A7" target="_blank" class="btn-gold-action btn-calendar">
+                    <i class="fa-regular fa-bell"></i>
+                    <span>احفظ الموعد في تقويم هاتفك</span>
+                </a>
+            </div>
+
+            <div class="ornament-divider"><i class="fa-solid fa-ring"></i></div>
+
+            <div class="closing-dua">
+                اللهم بارك لهما وبارك عليهما واجمع بينهما في خير وسعادة 💍✨💞💖<br>
+                بحضوركم تكتمل فرحتنا
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const song = document.getElementById('engagement-song');
+        let isPlaying = false;
+
+        function openInvitation() {
+            document.getElementById('gate-overlay').classList.add('opened');
+            document.getElementById('invite-content').classList.add('visible');
+            document.getElementById('music-toggle').style.display = 'flex';
+            playSong();
+            launchPetals();
+        }
+
+        function playSong() {
+            song.volume = 0.85;
+            song.play().then(() => {
+                isPlaying = true;
+                updateMusicUI();
+            }).catch(() => {
+                isPlaying = false;
+                updateMusicUI();
+            });
+        }
+
+        function pauseSong() {
+            song.pause();
+            isPlaying = false;
+            updateMusicUI();
+        }
+
+        function toggleSong() {
+            if (isPlaying) {
+                pauseSong();
+            } else {
+                playSong();
+            }
+        }
+
+        function handleVideoStart() {
+            if (isPlaying) {
+                pauseSong();
+            }
+        }
+
+        function updateMusicUI() {
+            const btn = document.getElementById('music-toggle');
+            const label = document.getElementById('music-label');
+            if (isPlaying) {
+                btn.classList.add('playing');
+                label.textContent = 'إيقاف الأغنية';
+            } else {
+                btn.classList.remove('playing');
+                label.textContent = 'تشغيل يا دبلة الخطوبة';
+            }
+        }
+
+        function launchPetals() {
+            const layer = document.getElementById('petals-layer');
+            const items = ['💛', '💍', '✨', '🌸', '🤍'];
+            setInterval(() => {
+                const el = document.createElement('div');
+                el.className = 'petal';
+                el.textContent = items[Math.floor(Math.random() * items.length)];
+                el.style.left = Math.random() * 100 + 'vw';
+                el.style.fontSize = (Math.random() * 14 + 14) + 'px';
+                el.style.animationDuration = (Math.random() * 3.5 + 4.5) + 's';
+                layer.appendChild(el);
+                setTimeout(() => el.remove(), 8000);
+            }, 650);
+        }
+
+        const eventDate = new Date("December 4, 2026 20:00:00").getTime();
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = eventDate - now;
+            if (diff <= 0) return;
+            document.getElementById("days").textContent = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, '0');
+            document.getElementById("hours").textContent = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+            document.getElementById("minutes").textContent = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+            document.getElementById("seconds").textContent = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+        }, 1000);
+    </script>
+</body>
+</html>
